@@ -1,0 +1,260 @@
+.modal {
+    max-width: 800px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    /* Тінь картки */
+    box-shadow: 0 10px 20px 0 rgba(93, 120, 255, 0.05);
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.modal_text {
+    width: 400px;
+    max-height: 550px;
+}
+
+.modal_text_container {
+    max-width: 380px;
+    margin: 10px;
+    max-height: 530px;
+}
+
+.modal img {
+    border-radius: 15px 0 0 15px;
+}
+
+.modal h3 {
+    color: rgb(0, 30, 65);
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    padding: 17.5px 35px 0;
+    margin: 0;
+    max-width: 316px;
+}
+
+.modal p {
+    color: rgb(0, 30, 65);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    margin: 24px 0 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+
+}
+
+.form-group label {
+    color: rgb(145, 145, 145);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    margin: 8px 0 4px;
+}
+
+.form-group input {
+    box-sizing: border-box;
+    border: 1px solid rgb(213, 213, 214);
+    border-radius: 8px;
+    /* Білий */
+    background: rgb(255, 255, 255);
+    color: rgb(189, 189, 189);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    width: 316px;
+    height: 37px;
+    padding: 8px 0 8px 12px;
+}
+
+.modal_submit {
+    display: flex;
+    justify-content: center;
+    margin: 34px 32px 0;
+    gap: 10px;
+}
+
+.modal_submit button {
+    margin: 0;
+}
+
+.modal_submit_support {
+    border-radius: 7px;
+    padding: 12px 41px;
+    background-color: rgb(174, 209, 255) !important;
+}
+
+.privacy_policy {
+    display: flex;
+    justify-content: center;
+
+    margin: 34px 32px 0 32px;
+    height: 30px;
+    align-items: center;
+}
+
+.privacy_policy .custom-checkbox {
+    box-sizing: border-box;
+    border: 1px solid rgb(213, 213, 214);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    padding: 6px;
+    cursor: pointer;
+    appearance: none; /* Вимикає стандартний вигляд чекбоксу */
+    position: relative;
+    margin: 0 8px;
+}
+
+.custom-checkbox:checked::before {
+    content: "✔";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(93, 120, 255); /* Колір галочки */
+    font-size: 12px; /* Розмір галочки */
+}
+
+.privacy_policy p {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    color: rgb(145, 145, 145);
+    text-align: left;
+    margin: 0;
+}
+
+.privacy_policy a {
+    color: rgb(93, 120, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+.modal_submit button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#support-btn,
+#contact-sales-btn {
+    margin-right: 10px;
+}
+
+#error-message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.modal_footer {
+    margin: 0 0 5px;
+    display: flex;
+    justify-content: center;
+    gap: 8.5px;
+}
+.close {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.close img {
+    z-index: 2;
+    border-radius: 0;
+}
+.close:hover:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 244, 246);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: background 0.3s; /* Плавний перехід фону */
+}
+@media (max-width: 1024px) {
+    .modal {
+        max-width: 600px;
+        padding: 20px;
+    }
+    .modal_text {
+        width: 100%;
+    }
+    .modal_text_container {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .man_modal {
+        display: none; /* Приховуємо зображення на менших екранах */
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        max-width: 500px;
+    }
+    .modal h3 {
+        font-size: 28px;
+    }
+    .modal p {
+        font-size: 12px;
+    }
+    .form-group input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+    .modal {
+        max-width: 400px;
+        top: 25%;
+    }
+    .modal h3 {
+        font-size: 24px;
+    }
+    .modal p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modal {
+        max-width: 300px;
+        top: 30%;
+    }
+    .modal_text_container {
+        padding: 0 15px;
+    }
+    .modal h3 {
+        font-size: 22px;
+    }
+    .modal p {
+        font-size: 11px;
+    }
+    .form-group input {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+

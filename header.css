@@ -1,0 +1,101 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 77px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    background-color: #fff;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 92px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header_nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header_link {
+    display: flex;
+    gap: 30px;
+    color: rgb(125, 125, 125);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header_link a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header_link li {
+    list-style-type: none;
+}
+
+button {
+    color: rgb(93, 120, 255);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(93, 120, 255);
+}
+
+.header_buttons {
+    display: flex;
+    gap: 16px;
+}
+/* Базові стилі для бургер-меню */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 1280px) {
+    .header_container {
+        padding: 0 30px; /* Менше відступів з боків на мобільних пристроях */
+    }
+}
+@media (max-width: 1024px) {
+    .header_container {
+        padding: 0 20px; /* Менше відступів з боків на мобільних пристроях */
+    }
+}
+
+@media (max-width: 950px) {
+    .header_container {
+        padding: 0 20px; /* Менше відступів з боків на мобільних пристроях */
+    }
+
+    .header_nav {
+        display: none; /* Сховаємо навігацію */
+    }
+
+    .burger-menu {
+        display: block; /* Показуємо бургер-меню */
+    }
+
+    .header_buttons {
+        display: none; /* Відображаємо кнопки бургер-меню */
+    }
+}

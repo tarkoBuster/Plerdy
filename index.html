@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plerdy Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Source+Sans+3&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="header.css"/>
+    <link rel="stylesheet" href="animateGrafic.css"/>
+    <link rel="stylesheet" href="slick.css"/>
+    <link rel="stylesheet" href="modal.css"/>
+</head>
+<body>
+<header>
+    <div class="header_container">
+        <a href="#" class="logo">
+            <img src="img/logo.svg" alt="Plerdy logo">
+        </a>
+        <nav class="header_nav">
+            <ul class="header_link">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Use Cases</a></li>
+                <li><a href="#">Book a Demo</a></li>
+            </ul>
+        </nav>
+        <div class="header_buttons">
+            <button>Sign In</button>
+            <button class="open-modal">Contact Sales</button>
+        </div>
+        <div class="burger-menu open-modal">
+            <img src="img/burger.svg" alt="Burger Menu">
+        </div>
+    </div>
+</header>
+
+<form class="modal" id="modal-form" style="display: none;">
+    <div class="man_modal">
+        <img src="img/man_modal.png" alt="man">
+    </div>
+    <div class="modal_text">
+        <div class="modal_text_container">
+            <div class="close" id="close-modal">
+                <img src="img/close.svg">
+            </div>
+            <h3>
+                How to do a Website Audit to Improve SEO & Conversions
+            </h3>
+            <p>
+                You will get an SMS with a link to the webinar
+            </p>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Boris Johnson" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Lable</label>
+                <input type="tel" id="phone-number" name="phone-number" placeholder="XX XXX XXXX" required>
+            </div>
+            <div class="modal_submit">
+                <button id="support-btn" class="modal_submit_support open-modal">Support</button>
+                <button type="submit" id="contact-sales-btn">Contact sales</button>
+            </div>
+            <div class="privacy_policy">
+                <input type="checkbox" name="agree" id="check-agree-btn" class="custom-checkbox">
+                <p>
+                    By sending up? you agree to our
+                    <a href="https://www.example.com/conditions" target="_blank">Conditions</a>
+                    and
+                    <a href="https://www.example.com/privacy-policy" target="_blank">Privacy Policy</a>
+                </p>
+            </div>
+            <footer class="modal_footer">
+                <img src="img/logo_modal.svg">
+                <img src="img/PoweredbyPlerdy.svg">
+            </footer>
+        </div>
+
+    </div>
+</form>
+
+<main>
+    <div class="main_container">
+        <div class="main_text">
+            <h1>How to do a Website Audit to Improve SEO & Conversions</h1>
+            <p>
+                Usability auditing with the Plerdy tool is a comprehensive expert assessment of your website based on a
+                profound study of user behavior registered on it. Plerdy will provide you with crucial data based on
+                which you will be able to run an efficient usability audit of your website, identify and fix SEO issues,
+                and subsequently lead it to higher positions in search.
+            </p>
+            <p class="signature">
+                Thus, you'll compile a list of flaws in your website interface, navigation, and conversion path that can
+                eventually affect its micro and macro conversion rates.
+            </p>
+            <button  class="open-modal">Run the Plerdy tool</button>
+            <p>Trusted by some of the world's largest enterprises</p>
+            <div class="partners_logo">
+                <img src="img/softserve.svg" alt="softserve"/>
+                <img src="img/subaru.svg" alt="subaru"/>
+                <img src="img/anexTour.svg" alt="anex tour"/>
+                <img src="img/prom.svg" alt="prom"/>
+                <img src="img/ukrposhta.svg" alt="ukrposhta"/>
+            </div>
+        </div>
+        <div class="main_image">
+            <img src="img/mainPage.png" alt="woman">
+            <div class="grafics_container">
+                <img src="img/Frame1.png" alt="graphic1" class="graphic">
+                <img src="img/Frame3.png" alt="graphic2" class="graphic">
+                <img src="img/Frame2.png" alt="graphic3" class="graphic">
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="reasons">
+    <div class="reasons_head_container">
+        <h2>
+            6 Reasons <span>to Use Plerdy Data for a Website Usability Audit</span>
+        </h2>
+        <div class="vector_container">
+            <div class="vector_image_container" id="prevSlide">
+                <img src="img/vectorLeft.svg" alt="vector left">
+            </div>
+            <div class="vector_image_container" id="nextSlide">
+                <img src="img/vectorRigth.svg" alt="vector right">
+            </div>
+        </div>
+    </div>
+    <div class="slider center">
+        <div class="slider_container">
+            <h3>You will benefit from our SaaS marketing product</h3>
+            <p>
+                Our team has developed a powerful tool to audit website content –
+                a heatmap that features more than 100
+                reports for e-marketers and business owners.
+            </p>
+            <div class="circle-number">
+                <div class="circle-number-text">1</div>
+            </div>
+        </div>
+        <div class="slider_container">
+            <h3>We have 10+ years of experience in digital marketing</h3>
+            <p>
+                The Plerdy team has rich experience in auditing, analyzing, and improving eCommerce websites to boost
+                their conversion rates. So we are well aware of all the weak spots of eCommerce websites and know what
+                data you need to run a usability audit of your website.
+            </p>
+            <div class="circle-number">
+                <div class="circle-number-text">2</div>
+            </div>
+        </div>
+        <div class="slider_container">
+            <h3>We enable generating hypotheses about what leads to low website conversions</h3>
+            <p>
+                Thanks to the data gathered with the Plerdy heatmap about your website visitors’ behavior, you can
+                generate hypotheses that potentially explain which functional flaws and problems are causing a low
+                conversion on your website and how.
+            </p>
+            <div class="circle-number">
+                <div class="circle-number-text">3</div>
+            </div>
+        </div>
+        <div class="slider_container">
+            <h3>The analysis of the dynamic elements of the website</h3>
+            <p>
+                Some services disregard such an important aspect as the clickability analysis of the dynamic elements
+                when UX auditing, including drop-down menu, pop-up, and slider. However, thanks to the unique Plerdy
+                auditing functionality, you will receive this information.
+            </p>
+            <div class="circle-number">
+                <div class="circle-number-text">4</div>
+            </div>
+        </div>
+        <div class="slider_container">
+            <h3>The analysis of both the desktop and mobile versions of the website</h3>
+            <p>
+                In some areas, websites generate more than 60% of the traffic from their mobile versions, so it would be
+                unwise not to audit the behavior of mobile users. With the Plerdy heatmap, you can run a UX auditing
+                analysis separately for the desktop and mobile versions of your website.
+            </p>
+            <div class="circle-number">
+                <div class="circle-number-text">5</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <button class="open-modal">Boost my website conversion</button>
+    <p>So, it’s high time for you to stop losing 99% of potential clients due to being unaware
+        of your website users’ behavior patterns and needs.</p>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
